@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('gz_raw_data', 'raw_gz_ship') }}
+    select * from {{ source('raw', 'raw_gz_ship') }}
 
 ),
 
@@ -19,5 +19,3 @@ renamed as (
 )
 
 select * from renamed
-
---Where shipping_fee <> shipping_fee_1 to test that both columns are the same
