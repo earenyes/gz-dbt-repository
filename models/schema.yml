@@ -15,6 +15,10 @@ sources:
            description: primary key
       -  name: raw_gz_product
       -  name: raw_gz_ship
+      - name: raw_gz_bing
+      - name: raw_gz_facbook
+      - name: raw_gz_criteo
+      - name: raw_gz_adwords
 ## the naming should be exact as in my raw folders but don't change to not break the tables ##
 models:
   - name: stg_raw_product 
@@ -49,5 +53,17 @@ models:
         description: Operational margin = margin + shipping fee - log_cost - ship_cost
   - name: finance_days
     description: finance calculation per days
+  - name: int_campaigns
+    description: table including all the adcosts from the different platforms
+  - name: int_campaigns_day
+    description: campaigns with the spend group by day
+    columns:
+      - name: date_date
+        tests:
+         - unique 
+         - not_null
+            
+    
 
-
+  
+      
