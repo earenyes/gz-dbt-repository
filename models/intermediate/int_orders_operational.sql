@@ -15,4 +15,4 @@ LEFT JOIN {{ref("stg_raw__raw_gz_ship")}} s
   USING(orders_id)
 ORDER BY orders_id desc
 
--- I have issues with the cast of the shiping costs. I did in the 
+-- I have issues with the cast of the shiping costs. Solved. had to be saved in the first table
