@@ -19,7 +19,6 @@ sources:
       - name: raw_gz_facbook
       - name: raw_gz_criteo
       - name: raw_gz_adwords
-
 ## the naming should be exact as in my raw folders but don't change to not break the tables ##
 models:
   - name: stg_raw_product 
