@@ -1,6 +1,3 @@
--- Join the int_campaigns_day model with finance_daysmodel from the previous lecture.
-
-
 
 SELECT
     campaigns.*,
