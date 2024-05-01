@@ -15,24 +15,11 @@ sources:
            description: primary key
       -  name: raw_gz_product
       -  name: raw_gz_ship
-
+## the naming should be exact as in my raw folders but don't change to not break the tables ##
 models:
-  - name: stg_raw_product ## the naming should be exact as in my raw folders but don't change to not break the tables ##
+  - name: stg_raw_product 
   - name: stg_raw_sales
   - name: stg_raw_ship
-  - name: int_sales_margin
-    tests:
-      - unique:
-          column_name: "(orders_id || '-' || products_id)"
-      - not_null:
-          column_name:
-            - orders_id
-            - products_id
-            - margin
-            - purchase_cost
-            - date_date
-            - revenue
-            - quantity
   - name: int_sales_margin
     description: margin calcultation per order line / product sale
     columns:
