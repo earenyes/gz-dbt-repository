@@ -55,5 +55,15 @@ models:
     description: finance calculation per days
   - name: int_campaigns
     description: table including all the adcosts from the different platforms
+  - name: int_campaigns_day
+    description: campaigns with the spend group by day
+    columns:
+      - name: date_date
+        tests:
+         - unique 
+         - not_null
+            
+    
+
   
       
