@@ -1,3 +1,9 @@
+{{ config(materialized='table')}}
+-- -- Materialize the view as a table
+-- -- Recreate the table each morning
+-- -- Specify the dataset and table name for materialization
+
+
 SELECT
     date_date
     ,COUNT(orders_id) AS nb_transactions
