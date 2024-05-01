@@ -53,3 +53,7 @@ models:
         description: Operational margin = margin + shipping fee - log_cost - ship_cost
   - name: finance_days
     description: finance calculation per days
+  - name: int_campaigns
+    description: table including all the adcosts from the different platforms
+  
+      
